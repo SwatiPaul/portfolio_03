@@ -1,0 +1,920 @@
+/* ====================Custom CSS=============== */
+/* Created by Swati Paul (Frontend Developer) */
+
+
+
+:root {
+    font-family: "Mulish", sans-serif;
+    --cd-font-family: "Montserrat", sans-serif;
+    --cd-fontSize: 16px;
+    --cd-fontWeight: 400;
+    --cd-dark-background: #111111;
+    --cd-sidebarBg: #000;
+    --cd-light-background: #f8f8f8;
+    --cd-header-inner: #323232;
+
+
+
+}
+
+.m-0{
+    margin: 0;
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.pt-10{
+    padding-top: 10px;
+}
+
+
+.main_all {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    position: relative;
+}
+
+.main_all .header {
+    display: none;
+}
+
+.main_all .header .header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    /* position: absolute; */
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50px;
+    padding: 15px 9px;
+    z-index: 10;
+    box-shadow: 0 6px 24px 0 rgba(0, 0, 0, .05), 0 0 0 1px rgba(0, 0, 0, .08);
+}
+
+.main_all .left_part {
+    width: 250px;
+    padding: 0 50px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex !important;
+    align-items: center;
+    z-index: 10;
+    transition: left 0.3s ease-in-out;
+    /* box-shadow: 0 0px 20px 3px #d1d0d0; */
+    bottom: 0;
+    background: #fefefe;
+    border-right: 1px solid #f0eeee;
+}
+
+.main_all .left_part .open {
+    left: 0;
+}
+
+
+.main_all .left_part img {
+    filter: invert(1);
+}
+
+.main_all .leftpart_inner {
+    width: 100%;
+    height: auto;
+}
+
+.main_all .left_part .menu {
+    padding: 40px 0 50px;
+    width: 100%;
+    float: left;
+}
+
+.main_all .left_part .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main_all .left_part .menu ul li a span {
+    text-decoration: none;
+}
+
+.main_all .left_part .menu ul li a {
+    width: 100%;
+    display: inline-flex;
+    text-decoration: none;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    color: #000;
+    gap: 15px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main_all .left_part .menu ul li:hover {
+    letter-spacing: 2px;
+}
+
+.main_all .left_part .menu ul li:hover a {
+    color: #000;
+}
+
+.main_all .left_part .menu ul li:active {
+    letter-spacing: 2px;
+
+}
+
+.main_all .left_part .menu ul li:active a {
+    color: #fff;
+
+}
+
+.main_all .left_part .copyright {
+    width: 100%;
+    float: left;
+}
+
+.main_all .left_part .copyright p {
+    color: #000;
+    font-size: 'Monteserrat';
+    line-height: 25px;
+    font-style: italic;
+}
+
+.trigger_point .hamburger {
+    height: 100%;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.trigger_point .hamburger {
+    cursor: pointer;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+
+}
+
+.trigger_point .hamburger-box {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.trigger_point .hamburger-box i {
+    font-size: 28px !important;
+    color: #fff;
+    /* color: transparent;
+    filter: invert(1); */
+}
+
+
+/* Rightpart */
+.main_all .right_part {
+    background: var(--cd-light-background);
+}
+
+.main_all .right_part {
+    width: 100%;
+    /* min-height: calc(100vh - 50px); */
+    min-height: 100vh;
+    float: left;
+    position: relative;
+}
+
+.main_all .right_part_inner {
+    position: relative;
+    width: 100%;
+    float: left;
+    clear: both;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.main_all .rightinner_contain {
+    padding-left: 290px;
+}
+
+.main_all .rightinner_contain.close {
+    padding-left: 0px;
+
+}
+
+.tokyo_home .home_content {
+    display: flex;
+    align-items: center;
+}
+
+.tokyo_home {
+    width: 100%;
+    min-height: calc(100vh - 30px);
+    clear: both;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main_all .home_content .avatar {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 100%;
+}
+
+.main_all .home_content .avatar_img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: 50%;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px hsla(0, 0%, 100%, .3);
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    overflow: hidden;
+    animation: anime 8s ease-in-out 0.1s infinite;
+}
+
+@keyframes anime {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+.main_all .home_content .details {
+    margin-left: 80px;
+}
+
+.main_all .home_content .details .name {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 15px;
+    margin-top: 0;
+    line-height: 48px;
+}
+
+.main_all .home_content .details .name {
+    color: #000000;
+
+}
+
+.main_all .home_content .details .typer {
+    margin-bottom: 15px;
+}
+
+.main_all .trigger_point {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.main_all .toggle_switch {
+    display: flex;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background: #dfdfdf;
+    border-radius: 50px;
+    transition: 1s;
+    transform: translateX(0);
+}
+
+.main_all .toggle_switch i {
+    color: #fff;
+}
+
+.main_all .right_part .details .typer {
+    font-size: 22px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    margin-top: 15px;
+}
+
+.main_all .right_part .details .job {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    width: 75%;
+}
+
+.main_all .left_part .navbar-brand {
+    color: transparent;
+    filter: invert(1);
+}
+
+.main_all .right_part .social {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.main_all .right_part .social li {
+    padding-right: 12px;
+    cursor: pointer;
+    display: inline-flex;
+}
+.main_all .right_part .social li a {
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.main_all .right_part .social li a:hover {
+    filter: opacity(.7);
+    transform: translateY(-5px);
+}
+
+
+.main_all .right_part .social li img {
+    width: 22px;
+    height: 22px;
+}
+
+.main_all .right_part .social i{
+    color: #000;
+    font-size: 22px;
+}
+.cursor {
+    display: inline-block;
+    width: 1px;
+    background-color: black;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+/* ABOUT SECTION */
+.main_all .right_part .container{
+    max-width: 1070px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    clear: both;
+    padding: 0 40px;
+}
+.main_all .right_part .tokyo_about{
+    width: 100%;
+    height: auto;
+    /* min-height: 100vh; */
+    float: left;
+    clear: both;
+    padding: 100px 0;
+    /* overflow-y: scroll; */
+}
+.main_all .right_part .tokyo_title{
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    margin-bottom: 42px;
+}
+.main_all .right_part .title_flex{
+    width: 100%;
+    height: auto;
+    clear: both;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: flex-end; */
+}
+.main_all .right_part .title_flex p span{
+    display: inline-block;
+    background: rgba(0, 0, 0, .04);
+    padding: 4px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0;
+    align-content: center;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    color: #333;
+    margin-bottom: 18px;
+}
+.main_all .right_part .title_flex p h3{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-family: 'Montserrat';
+    font-size: 28px;
+    text-transform: capitalize;
+}
+.main_all .right_part .tokyo_author{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    margin-bottom: 18px;
+    position: relative;
+}
+.main_all .right_part .tokyo_author img{
+    width: 100%;
+    height: auto;
+}
+
+.main_all .right_part .author_title{
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+.main_all .right_part .author_title h3{
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+}
+.main_all .right_part .author_text{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.main_all .right_part .author_text p{
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.main_all .right_part .author_text p:last-child{
+    margin-bottom: 0;
+}
+.main_all .right_part .tokyo_about .short_info{
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    display: flex;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.main_all .right_part .tokyo_about .short_info .left{
+    width: 50%;
+    padding-right: 30px;
+}
+.main_all .right_part .tokyo_about .short_info .right{
+    width: 50%;
+    padding-left: 30px;
+}
+.main_all .right_part .tokyo_about .tokyo_info{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+}
+.main_all .right_part .tokyo_about .tokyo_info ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main_all .right_part .tokyo_about .tokyo_info ul li{
+    margin: 0;
+}
+.main_all .right_part .tokyo_about .tokyo_info ul li span:first-child{
+    font-weight: 700;
+    font-size: 16px;
+    min-width: 100px;
+    color: #000;
+    margin-right: 10px;
+}
+.main_all .right_part .tokyo_about .download_info{
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+}
+.main_all .right_part .tokyo_about .download_info a{
+    background: #000;
+    padding: 11px 40px;
+    display: inline-block;
+    color: #fff;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.main_all .right_part .tokyo_about .download_info a:hover{
+    transform: translateX(10px);
+    letter-spacing: 1px;
+
+}
+.main_all .right_part .tokyo_progressbar{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    padding: 0 0 25px 0; 
+    background: white;
+}
+.main_all .right_part .inn{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    display: flex;
+}
+.main_all .right_part  .right{
+    width: 50%;
+    padding-left: 50px;
+}
+.main_all .right_part .left{
+    width: 50%;
+    padding-right: 50px;
+}
+.main_all .right_part .title_heading{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    margin-bottom: 20px;
+}
+/* .main_all .right_part .tokyo_progressbar .title_heading{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    padding-top: 30px;
+} */
+.main_all .right_part .tokyo_progressbar .progress ul{
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+
+}
+.main_all .right_part .tokyo_progressbar .progress ul li{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    padding-bottom: 15px;
+}
+.main_all .right_part .tokyo_progressbar .progress_inner{
+    font-style: italic;
+}
+.main_all .right_part .tokyo_skill{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    background: #f8f8f8;
+    padding: 40px 0;
+}
+.main_all .right_part .tokyo_skill .skill_list{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+}
+.main_all .right_part .tokyo_skill .skill_list ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.main_all .right_part .tokyo_skill .skill_list ul li{
+    display: flex;
+    align-items: center;
+    margin-left: -5px;
+}
+.main_all .right_part .tokyo_resume{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    background: #fff;
+    padding-bottom: 80px;
+}
+.main_all .right_part .tokyo_resume .resume_list{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+}
+.main_all .right_part .tokyo_resume .resume_list ul{
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+    list-style-type: none;
+    margin: 0;
+}
+.main_all .right_part .tokyo_resume .resume_list ul::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.07);
+}
+.main_all .right_part .tokyo_resume .resume_list ul li{
+    margin: 0;
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-left: 0;
+    padding-bottom: 45px;
+}
+.main_all .right_part .tokyo_resume .resume_list ul li::before{
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background: #fff;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    left: -49px;
+    top: 8px;
+}
+.main_all .right_part .tokyo_resume .resume_list ul li .list_inner{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    position: relative;
+    display: flex;
+}
+.main_all .right_part .tokyo_resume .resume_list ul li .list_inner .time{
+    width: 50%;
+    padding-right: 20px;
+}
+.main_all .right_part .tokyo_resume .resume_list ul li .list_inner .place{
+    width: 50%;
+    padding-left: 20px;
+}
+.main_all .right_part .resume_list ul li .list_inner .time span{
+    display: inline-block;
+    padding: 5px 25px;
+    border-radius: 50px;
+    font-size: 14px;
+    white-space: nowrap;
+    background-color: rgba(0,0,0,.05);
+}
+.main_all .right_part .resume_list ul li .list_inner .place h3{
+    font-size: 16px;
+    margin-bottom: 2px;
+    font-weight: 600;
+    margin-top: 0;
+    white-space: nowrap;
+    line-height: 12px;
+}
+.main_all .right_part .resume_list ul li .list_inner .place span{
+    font-size: 14px;
+}
+
+/* CONTACT SECTION */
+.main_all .right_part .tokyo_map{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    margin-bottom: 50px;
+}
+.main_all .right_part .tokyo_contact{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+}
+.main_all .right_part .tokyo_contact input{
+    padding: 12px;
+    width: 92%;
+    border: 0.5px solid #999;
+    background: transparent;
+    margin-bottom: 30px;
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+}
+.main_all .right_part .tokyo_contact textarea{
+    padding: 12px;
+    width: 92%;
+    border: 1px solid #c2bfbf;
+    background: transparent;
+    margin-bottom: 30px;
+    font-family: "Mulish", sans-serif;
+    font-size: 16px !important;
+
+}
+.main_all .right_part .tokyo_contact button{
+    padding: 14px 35px;
+    display: inline-flex;
+    background: #000000;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    /* box-shadow: 0 0 6px 0 #d5d1d1; */
+    /* border-radius: 5px; */
+    align-items: center;
+}
+
+
+
+
+
+
+
+  
+/* DARK THEME */
+
+.main_all .left_part.dark {
+    background: var(--cd-sidebarBg) !important;
+    border-right: 1px solid #211f1f;
+}
+
+.main_all .header .header_inner.dark {
+    background: var(--cd-header-inner) !important;
+}
+
+.main_all .header .dark img {
+    filter: invert(1);
+}
+
+/* .main_all .right_part .dark{
+    background: var(--cd-dark-background);
+} */
+/* .main_all .home_content .details .name.dark{
+    color: #000;
+} */
+/* .main_all .right_part.dark{
+    background: var(--cd-dark-background);
+} */
+.main_all .right_part.dark .details .name {
+    color: #ffffff;
+}
+
+.main_all .right_part.dark .details .typer {
+    color: #ffffff;
+
+}
+
+.main_all .right_part.dark .details .job {
+    color: #ffffff;
+
+}
+
+.main_all .right_part.dark {
+    background: var(--cd-dark-background);
+}
+
+.main_all .toggle_switch.dark {
+    background: #868686 !important;
+}
+
+.main_all .toggle_switch .dark i {
+    color: #000;
+}
+
+.trigger_point .hamburger-box i.dark {
+    color: #000;
+}
+
+.main_all .left_part.dark .menu ul li a {
+    color: #bbb;
+}
+
+.main_all .right_part.dark .social i {
+    color: #fff;
+}
+
+.main_all .right_part.dark .social img {
+    color: transparent;
+    filter: invert(1);
+
+}
+
+.main_all .left_part.dark .navbar-brand {
+    color: transparent;
+    filter: none;
+}
+
+.main_all .left_part.dark .copyright p {
+    color: #bbb;
+}
+.main_all .left_part.dark .menu ul li:hover a {
+    color: #fff;
+}
+.main_all .header_inner .logo{
+    padding-top: 10px;
+}
+
+/* ABOUT SECTION */
+.main_all .right_part.dark .tokyo_title span{
+    background-color: hsla(0, 0%, 100%, .08);
+    color: #999;
+}
+.main_all .right_part.dark .tokyo_title h3{
+    color: #fff;
+}
+.main_all .right_part.dark .author_title{
+    color: #fff;
+}
+.main_all .right_part.dark .author_title span{
+    color: #999 ;
+}
+.main_all .right_part.dark .author_text p{
+    color: #999 ;
+}
+.main_all .right_part.dark .tokyo_about .tokyo_info ul li span:first-child{
+    color: #fff;
+}
+.main_all .right_part.dark .tokyo_about .tokyo_info ul li span{
+    color: #999 ;
+
+}
+.main_all .right_part.dark .tokyo_about .download_info a{
+    background: #fff;
+    color: #000;
+}
+.main_all .right_part.dark .tokyo_progressbar{
+    background: #000;
+
+}
+.main_all .right_part.dark  .title_heading{
+    color: #fff;
+}
+.main_all .right_part.dark .tokyo_progressbar .progress_inner{
+    color: #999;
+}
+.main_all .right_part.dark .tokyo_skill{
+    background: #111111;
+}
+.main_all .right_part.dark .tokyo_skill .skill_list li i{
+    color: #fff;
+}
+.main_all .right_part.dark .tokyo_skill .skill_list li span{
+    color: #ababab;
+}
+.main_all .right_part.dark .tokyo_resume{
+    background: #000;
+}
+.main_all .right_part.dark .tokyo_resume .resume_list ul::before{
+    background: #868383;
+}
+.main_all .right_part.dark .tokyo_resume .resume_list li ::after{
+    background-color: #56585c;
+}
+.main_all .right_part.dark .resume_list ul li .list_inner .time span{
+    background-color: hsl(0deg 0% 100% / 15%);
+    color: #fff;
+}
+.main_all .right_part.dark .resume_list ul li .list_inner .place h3{
+    color: #fff;
+}   
+.main_all .right_part.dark .resume_list ul li .list_inner .place span{
+    color: #fff;
+} 
+.main_all .right_part.dark .tokyo_contact button{
+    background: #fff;
+    color: #000;
+}
+.main_all .right_part.dark .tokyo_contact input{
+    color: #fff;
+}
+.main_all .right_part.dark .tokyo_contact textarea{
+    color: #fff;
+}
+.main_all .right_part.dark .tokyo_contact textarea{
+    border: 0.5px solid #999;
+}

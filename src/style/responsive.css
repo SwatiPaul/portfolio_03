@@ -1,0 +1,181 @@
+ @media (max-width: 768px) {
+     .main_all .header .header_inner {
+         width: 95%;
+     }
+
+     .main_all .rightinner_contain {
+         padding-left: 0px !important;
+     }
+
+     .main_all .right_part .inn {
+         flex-direction: column;
+     }
+
+     .main_all .right_part .inn .right {
+         padding-left: 0;
+     }
+
+     .main_all .right_part .left {
+         width: 80% !important;
+     }
+
+     .main_all .right_part .right {
+         width: 80% !important;
+     }
+
+     .main_all .right_part .tokyo_author img {
+         /* width: 85%; */
+
+     }
+
+     .main_all .right_part .tokyo_about .short_info {
+         flex-direction: column;
+     }
+
+     .main_all .right_part .tokyo_about .short_info .left {
+         padding-bottom: 10px;
+     }
+
+     .main_all .right_part .tokyo_about .short_info .right {
+         padding-left: 0;
+     }
+
+     .main_all .right_part .author_text {
+         /* width: 90%; */
+     }
+
+     .main_all .right_part .container {
+         padding: 0 20px;
+     }
+     .main_all .right_part .author_title{
+        /* width: 90%; */
+     }
+     .main_all .right_part .tokyo_about .short_info{
+        /* width: 90%; */
+     }
+     .main_all .right_part .tokyo_about{
+        width: 90%;
+     }
+   
+
+ }
+
+
+
+ @media (max-width: 1040px) {
+     .home_content {
+         flex-direction: column;
+         gap: 24px;
+     }
+
+     .main_all .home_content .avatar {
+         width: 250px;
+         height: 250px;
+     }
+
+     .main_all .home_content .details .name {
+         font-size: 35px;
+         line-height: 40px;
+     }
+
+     .main_all .home_content .details {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin: auto;
+         padding: 0 40px;
+         text-align: center;
+     }
+
+     .main_all .rightinner_contain {
+         padding-left: 0px !important;
+     }
+ }
+
+ @media (max-width: 1200px) {
+     .main_all .left_part.open {
+         /* display: flex !important; */
+         transform: translateX(0);
+     }
+
+     .left_part {
+         transition: 0.5s !important;
+         transform: translateX(-100%);
+     }
+
+     .main_all .left_part {
+         /* display: none !important; */
+
+     }
+
+     .main_all .header {
+         display: block;
+     }
+
+     .main_all .leftpart .active {
+         transform: translateX(0);
+     }
+
+     .main_all .rightinner_contain {
+         padding-left: 50px;
+     }
+
+     .main_all .toggle_switch.large_screen {
+         display: none;
+     }
+ }
+
+ @media screen and (min-width: 1200px) and (max-width: 1300px) {
+     .main_all .left_part {
+         width: 180px !important;
+     }
+
+ }
+
+ @media (min-width: 1200px) {
+     .main_all .toggle_switch {
+         position: absolute;
+         right: 0;
+         top: 15rem;
+         z-index: 100;
+         width: 60px;
+         height: 50px;
+         border-top-left-radius: 50px;
+         border-bottom-left-radius: 50px;
+         border-top-right-radius: 0;
+         border-bottom-right-radius: 0;
+     }
+
+     .main_all .toggle_switch .dark {
+         background: #595959;
+
+     }
+ }
+
+ @media (min-width: 1300px) {
+     .main_all .rightinner_contain {
+         padding-left: 290px;
+     }
+
+     .main_all .left_part {
+         width: 180px !important;
+     }
+
+ }
+
+ @media (min-width: 1048px) {
+     .main_all .home_content .avatar {
+         min-width: 270px;
+     }
+ }
+
+
+
+ @media (max-width: 1600px) {
+     .main_all .left_part {
+         display: block;
+         width: 250px;
+         padding: 0 40px;
+         /* background: var( --cd-light-background); */
+     }
+ }
