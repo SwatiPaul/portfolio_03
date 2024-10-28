@@ -1,4 +1,3 @@
 [build]
-  base = "portfolio_03"  # This should match the folder name exactly
   command = "npm run build"
-  publish = "portfolio_03/build"
+  publish = "build"
