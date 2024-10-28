@@ -1,0 +1,9 @@
+[build]
+  # Define the base directory for your project
+  base = "portfolio02"
+  
+  # Define the command to build your project
+  command = "npm run build"
+  
+  # Define the directory to publish (where the final build output will be)
+  publish = "portfolio02/build"
