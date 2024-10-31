@@ -1,9 +1,10 @@
 import React from "react";
-import author from "../img/img_1.jpg";
+import author from "../img/img_1.jpeg";
 import LinearProgress, {
   linearProgressClasses,
 } from "@mui/material/LinearProgress";
 import { styled } from "@mui/material/styles";
+import portfolio from "../doc/swatipaulresume.pdf"
 
 interface abt {
   themeState: boolean;
@@ -47,17 +48,15 @@ const About: React.FC<abt> = ({ themeState }) => {
                     <img src={author} alt="author" />
                   </div>
                   <div className="author_title">
-                    <h3>Lorem Ipsum</h3>
-                    <span>Lorem, ipsum dolor</span>
+                    <h3>Swati Paul</h3>
+                    <span>Frontend Developer</span>
                   </div>
                   <div className="author_text">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cumque illo harum quia itaque provident!
+                    I am a frontend developer dedicated to crafting intuitive, user-focused interfaces that balance functionality with aesthetic appeal. With expertise in HTML, CSS, JavaScript, and modern frameworks, I deliver responsive, accessible, and engaging web applications.
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Magni aspernatur quaerat voluptates minima aperiam?
+                    Passionate about transforming ideas into interactive digital experiences, I focus on blending creativity with technical expertise to deliver high-quality web applications that delight users and meet business goals.
                     </p>
                   </div>
                   <div className="short_info">
@@ -66,15 +65,15 @@ const About: React.FC<abt> = ({ themeState }) => {
                         <ul>
                           <li>
                             <span>Birthday:</span>
-                            <span>01.01.2001</span>
+                            <span>04.02.1995</span>
                           </li>
                           <li>
-                            <span>Birthday:</span>
-                            <span>01.01.2001</span>
+                            <span>Address:</span>
+                            <span>Baghbazar,Kolkata</span>
                           </li>
                           <li>
-                            <span>Birthday:</span>
-                            <span>01.01.2001</span>
+                            <span>Email:</span>
+                            <span>swatipaul047@gmail.com</span>
                           </li>
                         </ul>
                       </div>
@@ -82,24 +81,25 @@ const About: React.FC<abt> = ({ themeState }) => {
                     <div className="right">
                       <div className="tokyo_info">
                         <ul>
+                          
                           <li>
-                            <span>Birthday:</span>
-                            <span>01.01.2001</span>
+                            <span>Study:</span>
+                            <span>University of Calcutta</span>
                           </li>
                           <li>
-                            <span>Birthday:</span>
-                            <span>01.01.2001</span>
+                            <span>Degree:</span>
+                            <span>Master</span>
                           </li>
                           <li>
-                            <span>Birthday:</span>
-                            <span>01.01.2001</span>
+                            <span>Interest:</span>
+                            <span>Travel</span>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </div>
                   <div className="download_info">
-                    <a href="#" download>
+                    <a href={portfolio} download>
                       <span>Download CV</span>
                     </a>
                   </div>
@@ -117,36 +117,36 @@ const About: React.FC<abt> = ({ themeState }) => {
                           <li>
                             <div className="progress_inner">
                               <p className="m-0 pb-10 d-flex justify-between">
-                                <span>WordPress</span>
-                                <span>50%</span>
+                                <span>HTML</span>
+                                <span>70%</span>
                               </p>
                               <BorderLinearProgress
                                 variant="determinate"
-                                value={50}
+                                value={70}
                               />
                             </div>
                           </li>
                           <li>
                             <div className="progress_inner">
                               <p className="m-0 pb-10 d-flex justify-between">
-                                <span>WordPress</span>
-                                <span>50%</span>
+                                <span>CSS</span>
+                                <span>80%</span>
                               </p>
                               <BorderLinearProgress
                                 variant="determinate"
-                                value={50}
+                                value={80}
                               />
                             </div>
                           </li>
                           <li>
                             <div className="progress_inner">
                               <p className="m-0 pb-10 d-flex justify-between">
-                                <span>WordPress</span>
-                                <span>50%</span>
+                                <span>JS</span>
+                                <span>60%</span>
                               </p>
                               <BorderLinearProgress
                                 variant="determinate"
-                                value={50}
+                                value={60}
                               />
                             </div>
                           </li>
@@ -155,23 +155,35 @@ const About: React.FC<abt> = ({ themeState }) => {
                     </div>
                     <div className="right">
                       <div className="title_heading">
-                        <h3>Programming Skills</h3>
+                        <h3>FrameWork & Library</h3>
                       </div>
                       <div className="progress">
                         <ul>
                           <li>
                             <div className="progress_inner">
                               <p className="m-0 pb-10 d-flex justify-between">
-                                <span>WordPress</span>
-                                <span>50%</span>
+                                <span>React</span>
+                                <span>60%</span>
                               </p>
                               <BorderLinearProgress
                                 variant="determinate"
-                                value={50}
+                                value={60}
                               />
                             </div>
                           </li>
                           <li>
+                            <div className="progress_inner">
+                              <p className="m-0 pb-10 d-flex justify-between">
+                                <span>Angular</span>
+                                <span>40%</span>
+                              </p>
+                              <BorderLinearProgress
+                                variant="determinate"
+                                value={40}
+                              />
+                            </div>
+                          </li>
+                          {/* <li>
                             <div className="progress_inner">
                               <p className="m-0 pb-10 d-flex justify-between">
                                 <span>WordPress</span>
@@ -182,19 +194,7 @@ const About: React.FC<abt> = ({ themeState }) => {
                                 value={50}
                               />
                             </div>
-                          </li>
-                          <li>
-                            <div className="progress_inner">
-                              <p className="m-0 pb-10 d-flex justify-between">
-                                <span>WordPress</span>
-                                <span>50%</span>
-                              </p>
-                              <BorderLinearProgress
-                                variant="determinate"
-                                value={50}
-                              />
-                            </div>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </div>
@@ -212,20 +212,20 @@ const About: React.FC<abt> = ({ themeState }) => {
                         <ul>
                           <li>
                             <i className="material-icons">arrow_right</i>
-                            <span>Bootstrap, Angular</span>
+                            <span>Bootstrap,ReactBootstrap,MUI,Angular Material</span>
                           </li>
                           <li>
                             <i className="material-icons">arrow_right</i>
-                            <span>Bootstrap, Angular</span>
+                            <span>React, Angular</span>
                           </li>
                           <li>
                             <i className="material-icons">arrow_right</i>
-                            <span>Bootstrap, Angular</span>
+                            <span>Redux</span>
                           </li>
-                          <li>
+                          {/* <li>
                             <i className="material-icons">arrow_right</i>
                             <span>Bootstrap, Angular</span>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </div>
@@ -237,20 +237,20 @@ const About: React.FC<abt> = ({ themeState }) => {
                         <ul>
                           <li>
                             <i className="material-icons">arrow_right</i>
-                            <span>Bootstrap, Angular</span>
+                            <span>User-Centered Design</span>
                           </li>
                           <li>
                             <i className="material-icons">arrow_right</i>
-                            <span>Bootstrap, Angular</span>
+                            <span>Performance Optimization</span>
                           </li>
                           <li>
                             <i className="material-icons">arrow_right</i>
-                            <span>Bootstrap, Angular</span>
+                            <span>Exploring New Technologies</span>
                           </li>
-                          <li>
+                          {/* <li>
                             <i className="material-icons">arrow_right</i>
                             <span>Bootstrap, Angular</span>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </div>
@@ -269,10 +269,21 @@ const About: React.FC<abt> = ({ themeState }) => {
                           <li>
                             <div className="list_inner">
                               <div className="time">
-                                <span>2014-2016</span>
+                                <span>2021-2022</span>
                               </div>
                               <div className="place">
-                                <h3>Oxford University</h3>
+                                <h3>Central Institute of Technology</h3>
+                                <span>Web Development</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div className="list_inner">
+                              <div className="time">
+                                <span>2017-2020</span>
+                              </div>
+                              <div className="place">
+                                <h3>Vidysagar University</h3>
                                 <span>Master Degree</span>
                               </div>
                             </div>
@@ -280,22 +291,11 @@ const About: React.FC<abt> = ({ themeState }) => {
                           <li>
                             <div className="list_inner">
                               <div className="time">
-                                <span>2014-2016</span>
+                                <span>2016</span>
                               </div>
                               <div className="place">
-                                <h3>Oxford University</h3>
-                                <span>Master Degree</span>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div className="list_inner">
-                              <div className="time">
-                                <span>2014-2016</span>
-                              </div>
-                              <div className="place">
-                                <h3>Oxford University</h3>
-                                <span>Master Degree</span>
+                                <h3>Calcutta University</h3>
+                                <span>Bachelor Degree</span>
                               </div>
                             </div>
                           </li>
@@ -308,7 +308,30 @@ const About: React.FC<abt> = ({ themeState }) => {
                       </div>
                       <div className="resume_list">
                         <ul>
+                        <li>
+                            <div className="list_inner">
+                              <div className="time">
+                                <span>2023-Present</span>
+                              </div>
+                              <div className="place">
+                                <h3>Blu Cocoon Digital Pvt Ltd</h3>
+                                <span>Associate UI Develper</span>
+                              </div>
+                            </div>
+                          </li>
                           <li>
+                            <div className="list_inner">
+                              <div className="time">
+                                <span>2022-2023</span>
+                              </div>
+                              <div className="place">
+                                <h3>UBK Infotech Pvt Ltd</h3>
+                                <span>Frontend Developer</span>
+                              </div>
+                            </div>
+                          </li>
+                         
+                          {/* <li>
                             <div className="list_inner">
                               <div className="time">
                                 <span>2014-2016</span>
@@ -318,29 +341,7 @@ const About: React.FC<abt> = ({ themeState }) => {
                                 <span>Master Degree</span>
                               </div>
                             </div>
-                          </li>
-                          <li>
-                            <div className="list_inner">
-                              <div className="time">
-                                <span>2014-2016</span>
-                              </div>
-                              <div className="place">
-                                <h3>Oxford University</h3>
-                                <span>Master Degree</span>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div className="list_inner">
-                              <div className="time">
-                                <span>2014-2016</span>
-                              </div>
-                              <div className="place">
-                                <h3>Oxford University</h3>
-                                <span>Master Degree</span>
-                              </div>
-                            </div>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </div>

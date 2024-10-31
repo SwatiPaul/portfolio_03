@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
-import image from '../img/img_1.jpg';
+import image from '../img/img_1.jpeg';
 import social from '../img/linkedin.svg'
 import TypewriterComponent from "typewriter-effect";
 
@@ -24,14 +24,14 @@ const Home:React.FC<abc> = ({state,themeState}) => {
                    <div className="avatar_img" style={{backgroundImage:`url(${image})`}}></div>
                   </div>
                   <div className="details">
-                    <h3 className="name">abcghdgd hghghs</h3>
+                    <h3 className="name">Swati Paul</h3>
                     <h4 className="typer">
                       <TypewriterComponent
                       options={{
                         strings:[
-                          'Lorem ipsum dolor ',
-                          'consectetur adipisicing ',
-                          'Eius iste doloremque'
+                          'UI Developer',
+                          'Frontend Developer ',
+                          
                         ],
                         autoStart:true,
                         loop:true,
@@ -39,7 +39,7 @@ const Home:React.FC<abc> = ({state,themeState}) => {
                       }}
                       />
                     </h4>
-                    <p className="job">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iste doloremque laboriosam doloribus dignissimos?</p>
+                    <p className="job">Creative Frontend Developer, passionate about building responsive, user-friendly web applications and open to collaborative projects.</p>
                     <ul className="social">
                       <li>
                         <a href="#">
@@ -47,12 +47,12 @@ const Home:React.FC<abc> = ({state,themeState}) => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="mailto:swatipaul047@gmail.com">
                           <i className="material-icons">mail</i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/swati-paul-2760701bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                           <img src={social} alt="linked_in" />
                         </a>
                       </li>
