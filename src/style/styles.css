@@ -50,7 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 98%;
+    width: 100%;
     /* position: absolute; */
     position: relative;
     top: 0;
@@ -290,8 +290,9 @@
 .main_all .trigger_point {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
+    padding: 0 30px;
 }
 
 .main_all .toggle_switch {
@@ -379,7 +380,12 @@
       opacity: 0;
     }
   }
-
+  .tokyo_home,
+  .tokyo_home
+  .home_content{
+    display: flex;
+    align-items: center;
+  }
 
 /* ABOUT SECTION */
 .main_all .right_part .container{
@@ -677,12 +683,13 @@
     display: flex;
 }
 .main_all .right_part .tokyo_resume .resume_list ul li .list_inner .time{
-    width: 50%;
+    width: 150px;
     padding-right: 20px;
 }
 .main_all .right_part .tokyo_resume .resume_list ul li .list_inner .place{
-    width: 50%;
-    padding-left: 20px;
+    width: 60%;
+    padding-left: 0px;
+    text-align: left;
 }
 .main_all .right_part .resume_list ul li .list_inner .time span{
     display: inline-block;
@@ -697,8 +704,8 @@
     margin-bottom: 2px;
     font-weight: 600;
     margin-top: 0;
-    white-space: nowrap;
-    line-height: 12px;
+    white-space: pre-wrap;
+    line-height: 27px;
 }
 .main_all .right_part .resume_list ul li .list_inner .place span{
     font-size: 14px;
@@ -838,6 +845,14 @@
 .main_all .header_inner .logo{
     padding-top: 10px;
 }
+.main_all .right_part.dark .home_content .avatar_img {
+    filter: grayscale(1);
+}
+.main_all .right_part.dark .tokyo_author{
+    filter: grayscale(1);
+
+}
+
 
 /* ABOUT SECTION */
 .main_all .right_part.dark .tokyo_title span{

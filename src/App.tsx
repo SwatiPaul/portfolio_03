@@ -8,6 +8,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Contact from "./pages/Contact";
 
+import Projects from "./pages/Projects";
+
 const App: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [theme, setTheme] = useState<boolean>(false);
@@ -54,7 +56,7 @@ const App: React.FC = () => {
             />
             <Route path="/about" element={<About themeState={theme} />} />
             <Route path="/contact" element={<Contact themeState={theme} />} />
-            <Route path="/service" element={<Contact themeState={theme} />} />
+            <Route path="/projects" element={<Projects themeState={theme} />} />
 
             
           </Routes>

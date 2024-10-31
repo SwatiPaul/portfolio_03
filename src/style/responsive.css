@@ -160,6 +160,14 @@
      .main_all .left_part {
          width: 180px !important;
      }
+     .tokyo_home .home_content{
+        width: 60rem;
+     }
+.main_all .right_part .resume_list ul li .list_inner .place h3{
+    line-height: 27px;
+    white-space: wrap;
+}
+
 
  }
 
@@ -178,4 +186,5 @@
          padding: 0 40px;
          /* background: var( --cd-light-background); */
      }
+     
  }

@@ -31,9 +31,9 @@ const Sidebar:React.FC<state> = ({state,themeState}) => {
                 </a>
               </li>
               <li>
-                <a href="/service">
+                <a href="/projects">
                 <i className="material-icons">settings</i>
-                  <span>Service</span>
+                  <span>Projects</span>
                 </a>
               </li>
               <li>
