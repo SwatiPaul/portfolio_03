@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import project1 from '../img/project1.jpg'
 
 interface cntact {
   themeState: boolean;
@@ -36,8 +37,24 @@ const Projects: React.FC<cntact> = ({ themeState }) => {
                   </div>
                  
                 </div>
-                <div className="">
-                  
+                <div className="list_wrapper">
+                    <ul className="aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+                      <li>
+                        <div className="inner">
+                          <a href="#">
+                            <img src={project1} alt="project1"  />
+                          </a>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="inner">
+                          <a href="#">
+                            <img src={project1} alt="project1"  />
+                          </a>
+                        </div>
+                      </li>
+                     
+                    </ul>
                 </div>
               </div>
             </div>

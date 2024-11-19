@@ -31,6 +31,7 @@ const Home:React.FC<abc> = ({state,themeState}) => {
                         strings:[
                           'UI Developer',
                           'Frontend Developer ',
+                          'Web Developer'
                           
                         ],
                         autoStart:true,
