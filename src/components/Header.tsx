@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../img/logo_dark.png";
+import { useLocation, useNavigate } from "react-router-dom";
 
 interface abc {
   func: any;
@@ -8,17 +9,29 @@ interface abc {
 }
 
 const Header: React.FC<abc> = ({ func, themeState, themefunc }) => {
+
+  const location = useLocation();
+  console.log('location',location);
+
+  const pathNameRemoveSlash = location.pathname.replace(/^\/+/, '')
+  
   return (
     <>
       <div className="header">
         <div className={`header_inner ${themeState ? '' : 'dark'} `}>
           <div className="logo">
-            <a href="http://">
-              <img
+            <a href="#">
+              {/* <img
                 src={logo}
                 alt="logo_dark"
                 style={{ color: "transparent" }}
-              />
+              /> */}
+               {location.pathname == '/home' ? 
+            <h2 className='folio_text'>Portfolio </h2>
+            :
+            <h2 className='folio_text'>{pathNameRemoveSlash}</h2>
+               }
+
             </a>
           </div>
 

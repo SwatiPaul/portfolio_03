@@ -56,8 +56,96 @@
      .main_all .right_part .tokyo_about{
         width: 90%;
      }
-   
+     .main_all .trigger_point{
+        padding: 0 5px;
+    }
+    .main_all .right_part .author_text p{
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .main_all .right_part .author_title{
+        padding-bottom: 10px;
+    margin-bottom: 15px;
+    }
+    .main_all .right_part .author_title h3{
+        font-size: 20px;
+    margin: 0;
+    }
+    .main_all .right_part .author_title span{
+        font-size: 14px;
+    }
+    .main_all .right_part .tokyo_title{
+        margin-bottom: 10px;
+    }
+    .main_all .right_part .tokyo_author{
+        margin-bottom: 12px;
+    }
+    .main_all .right_part .tokyo_about .tokyo_info ul li span:first-child{
+        font-size: 13px;
+    }
+    .main_all .right_part.dark .tokyo_about .tokyo_info ul li span{
+        font-size: 13px;
+    }
+    .main_all .right_part .tokyo_about .download_info a{
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .main_all .right_part .title_heading h3{
+        margin: 10px auto;
+        font-size: 16px;
+    }
+    .main_all .right_part.dark .tokyo_progressbar .progress_inner{
+        font-size: 13px;
+    }
+    .main_all .right_part .title_heading{
+        margin-bottom: 5px;
+    }
+    .main_all .right_part.dark .tokyo_skill .skill_list li span{
+        font-size: 13px;
+    }
+    .main_all .right_part .tokyo_skill{
+        padding: 20px 0;
+    }
+    .main_all .right_part .resume_list ul li .list_inner .place h3{
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .main_all .right_part .resume_list ul li .list_inner .place span{
+        font-size: 12px;
 
+    }
+    .main_all .right_part .resume_list ul li .list_inner .time span{
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+    .main_all .right_part .tokyo_resume .resume_list ul li::before{
+        height: 12px;
+    width: 12px;
+    left: -46px;
+    }
+    .main_all .right_part .tokyo_contact textarea{
+        margin-bottom: 12px;
+        font-size: 13px;
+
+    }
+    
+    .main_all .right_part .tokyo_contact input{
+        margin-bottom: 15px;
+        font-size: 13px;
+    }
+    .main_all .right_part .tokyo_map{
+        margin-bottom: 40px;
+    }
+    .main_all .right_part .tokyo_about{
+        height: 100%;
+        overflow-y: scroll;
+    }
+    .list_wrapper ul{
+        grid-template-columns: 1fr;
+    }
+    .list_wrapper ul li{
+        margin: 0 0 20px;
+    }
  }
 
 
@@ -90,6 +178,7 @@
      .main_all .rightinner_contain {
          padding-left: 0px !important;
      }
+   
  }
 
  @media (max-width: 1200px) {
@@ -173,9 +262,12 @@
 
  @media (min-width: 1048px) {
      .main_all .home_content .avatar {
-         min-width: 270px;
+         /* min-width: 270px; */
+         width: 450px;
      }
+    
  }
+
 
 
 
@@ -187,4 +279,33 @@
          /* background: var( --cd-light-background); */
      }
      
+ }
+ @media (max-width: 375px){
+    .main_all .right_part .details .typer{
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .main_all .right_part .details .job{
+        font-size: 14px;
+        width: 90%;
+        margin: 4px;
+        line-height: 26px;
+    }
+    .main_all .home_content .details .name{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .main_all .home_content .details{
+        margin-bottom: 20px;
+    }
+    .main_all .home_content .avatar{
+        width: 200px;
+        height: 200px;
+
+    }
+    .main_all .right_part .tokyo_about{
+        padding: 20px 0;
+    }
+   
  }

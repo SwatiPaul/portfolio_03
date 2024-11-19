@@ -13,7 +13,8 @@ const Sidebar:React.FC<state> = ({state,themeState}) => {
        <div className="leftpart_inner">
           <div className="logo">
             <a href="#" className={`navbar-brand ${themeState? '' : 'dark'}`}>
-            <img src={logo} alt="_img_logo_dark" style={{color:'transparent'}} />
+            {/* <img src={logo} alt="_img_logo_dark" style={{color:'transparent'}} /> */}
+            <h2 className='folio_text'>Portfolio</h2>
             </a>
           </div>
           <div className="menu">
@@ -44,11 +45,11 @@ const Sidebar:React.FC<state> = ({state,themeState}) => {
               </li>
             </ul>
           </div>
-          <div className="copyright">
+          {/* <div className="copyright">
               <p className='m-0'>
                 @ 2024  <br/> Created by XYZ
               </p>
-          </div>
+          </div> */}
        </div>
     </div>
     </>

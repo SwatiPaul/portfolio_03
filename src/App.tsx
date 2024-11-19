@@ -36,6 +36,7 @@ const App: React.FC = () => {
           func={toggleSidebar}
           themeState={theme}
           themefunc={toggleTheme}
+          
         />
         <Sidebar state={isOpen} themeState={theme} />
         <div style={{position:'relative'}}>

@@ -65,7 +65,7 @@ const About: React.FC<abt> = ({ themeState }) => {
                         <ul>
                           <li>
                             <span>Birthday:</span>
-                            <span>04.02.1995</span>
+                            <span>4th February</span>
                           </li>
                           <li>
                             <span>Address:</span>
