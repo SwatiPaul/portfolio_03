@@ -64,6 +64,7 @@ const Contact: React.FC<cntact> = ({ themeState }) => {
                       </p>
                     </div>
                   </div>
+                  {/* <div className="tokyo_main_contact"> */}
                   <div className="tokyo_map">
                     <LoadScript googleMapsApiKey="AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao">
                       <GoogleMap
@@ -114,6 +115,7 @@ const Contact: React.FC<cntact> = ({ themeState }) => {
                       <button type="submit">Send Message</button>
                     </form>
                   </div>
+                  {/* </div> */}
                 </div>
               </div>
             </div>

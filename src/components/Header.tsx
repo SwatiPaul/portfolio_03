@@ -26,7 +26,7 @@ const Header: React.FC<abc> = ({ func, themeState, themefunc }) => {
                 alt="logo_dark"
                 style={{ color: "transparent" }}
               /> */}
-               {location.pathname == '' ? 
+               {location.pathname === '/' ? 
             <h2 className='folio_text'>Portfolio </h2>
             :
             <h2 className='folio_text'>{pathNameRemoveSlash}</h2>
