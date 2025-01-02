@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import project1 from '../img/project1.jpg';
+import project1 from '../img/project1.png';
 import project2 from '../img/project2.png'
 
 interface cntact {
@@ -42,7 +42,7 @@ const Projects: React.FC<cntact> = ({ themeState }) => {
                     <ul className="aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
                       <li>
                         <div className="inner">
-                          <a href="#">
+                          <a href="https://justmovie.netlify.app/">
                             <img src={project1} alt="project1"  />
                           </a>
                         </div>
