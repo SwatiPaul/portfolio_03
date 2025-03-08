@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import project1 from '../img/project1.png';
-import project2 from '../img/project2.png'
+import project2 from '../img/project02.png'
 
 interface cntact {
   themeState: boolean;
@@ -49,8 +49,8 @@ const Projects: React.FC<cntact> = ({ themeState }) => {
                       </li>
                       <li>
                         <div className="inner">
-                          <a href="#">
-                            <img src={project2} alt="project1"  />
+                          <a href="https://cityexpresstourist.in/">
+                            <img src={project2} alt="project2"  />
                           </a>
                         </div>
                       </li>
