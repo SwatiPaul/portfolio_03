@@ -50,7 +50,7 @@ export const projects = [
       "A personal movie discovery web app built with React — featuring search, genre filtering, and a clean browsing experience for film enthusiasts.",
     result:
       "A sleek, fully responsive platform with smooth interactions, API-driven content, and an intuitive UI that makes discovering movies effortless.",
-    image: "/img/project1.png",
+    image: "public/img/project1.png",
     url: "https://justmovie.netlify.app/",
     tags: ["React", "REST API", "Responsive Design", "Netlify"],
   },
@@ -62,7 +62,7 @@ export const projects = [
       "A tourism website built to showcase travel services, bus routes, and destination information with a professional, mobile-first layout.",
     result:
       "A polished multi-page site with clear service presentation, booking information, and engaging visuals that drive visitor engagement.",
-    image: "/img/project02.png",
+    image: "public/img/project02.png",
     url: "https://cityexpresstourist.in/",
     tags: ["React", "UI/UX", "Multi-page", "Responsive"],
   },

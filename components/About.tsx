@@ -12,7 +12,7 @@ export default function About() {
           <Reveal className="relative lg:sticky lg:top-32">
             <div className="relative aspect-[4/5] max-w-md mx-auto lg:mx-0 rounded-2xl overflow-hidden">
               <Image
-                src="/img/img_1.jpeg"
+                src="/public/img/img_1.jpeg"
                 alt={siteConfig.name}
                 fill
                 className="object-cover"
